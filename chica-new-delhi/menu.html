@@ -42,9 +42,66 @@
 </header>
 
 <main>
-  
+  <section class="hero-mini">
+    <div class="container">
+      <span class="crumb">New Delhi, India</span>
+      <h1>पूरा मेन्यू</h1>
+      <p>Every price in Rupee, updated before you order. Add what you want, then send the whole itemised basket to CHICA on WhatsApp in one tap.</p>
+      <div class="btn-row" style="margin-top:1.5rem">
+        <button class="btn js-open-cart"><i class="fa-solid fa-basket-shopping"></i> टोकरी देखें</button>
+        <a class="btn btn--ghost" href="menu.html"><i class="fa-solid fa-wallet"></i> टॉप-अप करें और बोनस पाएं</a>
+      </div>
+    </div>
+  </section>
 
-  
+  <section class="section section--tight">
+    <div class="container">
+      <div class="filters-bar">
+        <div class="search-wrap">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <label class="sr-only" for="menuSearch">मेन्यू में खोजें</label>
+          <input class="input" id="menuSearch" type="search" placeholder="Search menu…" autocomplete="off">
+        </div>
+        <label class="sr-only" for="menuSort">Sort menu</label>
+        <select class="select select--auto" id="menuSort">
+          <option value="featured">पहले खास</option>
+          <option value="low">कीमत: कम से ज्यादा</option>
+          <option value="high">कीमत: ज्यादा से कम</option>
+          <option value="az">A – Z</option>
+        </select>
+      </div>
+      <div class="filters" id="menuFilters" role="group" aria-label="Filter by category"></div>
+      <p class="center muted" id="menuCount" style="font-size:.85rem;margin-top:-1rem;margin-bottom:1.5rem"></p>
+      <div class="menu-grid" id="menuGrid"></div>
+
+      <div class="panel" style="margin-top:2.5rem">
+        <div class="panel__head"><h3><i class="fa-solid fa-circle-info"></i> ऑर्डर से पहले जान लें</h3></div>
+        <div class="grid grid--2">
+          <ul class="checklist" style="list-style:none;padding:0">
+            <li><i class="fa-solid fa-truck-fast"></i><span><strong>स्थानीय डिलीवरी</strong> — send your address; we deliver across the local area.</span></li>
+            <li><i class="fa-solid fa-bowl-food"></i><span><strong>कैटरिंग और मील प्लान</strong> — need 20+ plates? संदेश us with 48–72 hours' notice.</span></li>
+          </ul>
+          <ul class="checklist" style="list-style:none;padding:0">
+            <li><i class="fa-solid fa-utensils"></i><span><strong>Pickup</strong> — collect at our counter, no room number needed.</span></li>
+            <li><i class="fa-solid fa-money-bill-wave"></i><span><strong>Prices in INR</strong> — subject to change; the basket total is what you send to us, and we confirm on WhatsApp.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container">
+      <div class="cta-strip reveal">
+        <h2>जो चाहिए वो नहीं मिला?</h2>
+        <p>Ask CHICA directly — off-menu requests, large local orders and catering quotes all happen on WhatsApp.</p>
+        <div class="btn-row">
+          <a class="btn btn--ghost" href="https://wa.me/09990019981" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> संदेश 099900 19981</a>
+          <a class="btn" href="menu.html"><i class="fa-solid fa-wallet"></i> वॉलेट और प्लान</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="footer">

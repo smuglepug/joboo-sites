@@ -55,7 +55,64 @@
 <main id="main">
 
   <!-- ============ HERO (full-bleed food photo — the photo IS the UI) ============ -->
-  
+  <section class="hero-full" id="hero">
+    <div class="hero-full__bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=1800&q=80" alt="">
+    </div>
+    <div class="hero-full__veil" aria-hidden="true"></div>
+    <div class="container hero-full__content">
+      <h1>लुभावना स्थानीय खाना, एक टैप में ऑर्डर।</h1>
+      <p class="hero__lede">WhatsApp पर ऑर्डर करें, वॉलेट से भुगतान करें — आपके पते पर डिलीवरी।</p>
+      <div class="hero__cta">
+        <a class="btn" href="menu.html"><i class="fa-solid fa-utensils"></i> ऑर्डर करें</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust bar sits below the hero, never over the food -->
+  <div class="trust-bar">
+    <div class="container trust-bar__inner">
+      <span class="trust-chip"><i class="fa-brands fa-whatsapp"></i> सीधे WhatsApp पर ऑर्डर</span>
+      <span class="trust-chip"><i class="fa-solid fa-lock"></i> डिलीवरी पर भुगतान जारी</span>
+      <span class="trust-chip"><i class="fa-solid fa-truck-fast"></i> आपके पते पर डिलीवरी</span>
+      <span class="trust-chip"><i class="fa-solid fa-bowl-food"></i> कैटरिंग · 48–72 घंटे पहले सूचना</span>
+    </div>
+  </div>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>विशेष शवरमा</span><span>·</span><span>विशेष चावल</span><span>·</span><span>लेबनीज़ शवरमा</span><span>·</span><span>तीखी मसालेदार पंख</span><span>·</span><span>चिकन पेन पास्ता</span><span>·</span><span>Meat Pie</span><span>·</span><span>Zobo</span><span>·</span><span>स्थानीय डिलीवरी</span><span>·</span>
+      <span>विशेष शवरमा</span><span>·</span><span>विशेष चावल</span><span>·</span><span>लेबनीज़ शवरमा</span><span>·</span><span>तीखी मसालेदार पंख</span><span>·</span><span>चिकन पेन पास्ता</span><span>·</span><span>Meat Pie</span><span>·</span><span>Zobo</span><span>·</span><span>स्थानीय डिलीवरी</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- ============ WALLET TEASER ============ -->
+  <section class="section">
+    <div class="container split">
+      <div>
+        <div class="section-title section-title--left reveal">
+          <span class="eyebrow">वॉलेट और प्लान</span>
+          <h2>हमारे प्लान देखें</h2>
+          <span class="bar"></span>
+        </div>
+        
+      <div class="panel reveal">
+        <div class="panel__head"><h3><i class="fa-solid fa-calculator"></i> टॉप-अप कैसे काम करता है</h3></div>
+        <div class="receipt">
+          <div class="receipt__row"><span>You pay</span><span>₹250,000</span></div>
+          <div class="receipt__row receipt__row--bonus"><span>प्लान 2 बोनस (7%)</span><span>+₹17,500</span></div>
+          <div class="receipt__row receipt__row--total"><span>वॉलेट क्रेडिट</span><span>₹267,500</span></div>
+        </div>
+        <ul class="checklist" style="list-style:none;padding:0;margin:1rem 0 0">
+          <li><i class="fa-solid fa-circle-check"></i><span>भुगतान से पहले बोनस अपने आप गिना जाता है।</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>हर टॉप-अप, बोनस और ऑर्डर आपके इतिहास में दर्ज रहता है।</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>पूरा रिकॉर्ड कभी भी CSV में निकालें।</span></li>
+        </ul>
+        <p class="muted" style="font-size:.78rem;margin:1rem 0 0"><i class="fa-solid fa-circle-info"></i> Payments on this site currently run in <strong>demo mode</strong> — no real money is charged. See <a href="terms.html#demo" style="text-decoration:underline">Terms §8</a>.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- ============ SIGNATURES ============ -->
   <section class="section section--dark grain">
