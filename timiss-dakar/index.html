@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr-SN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Timiss — Bar in Dakar</title>
+<meta name="description" content="Timiss a 12000; Corniche des Almadies; dakar. Commandez sur WhatsApp, a emporter ou livre. Menu, photos et commande en un geste.">
+<meta name="theme-color" content="#3b141c">
+<meta property="og:title" content="Timiss">
+<meta property="og:description" content="Commande sur WhatsApp. Livraison locale a 12000; Corniche des Almadies; dakar.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Miniver&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/style.css?v=11">
+</head>
+<body class="has-hero">
+<div class="page-veil" id="pageVeil" aria-hidden="true"><div class="page-veil__inner"><div class="page-veil__mark">Timiss</div><div class="page-veil__bar"><i></i></div><div class="page-veil__txt">Frais. Savoureux. Irrésistible.</div></div></div>
+<script>if(sessionStorage.getItem("dot-nav")==="1"){var _v=document.getElementById("pageVeil");if(_v){_v.classList.add("is-on");_v.style.transition="none";_v.style.opacity="1";_v.style.pointerEvents="all";requestAnimationFrame(function(){_v.style.transition="";});}}</script>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="Timiss home">
+      <span class="brand__mark">Timiss</span>
+      <span class="brand__text">
+        <span class="brand__name">Timiss</span>
+        <span class="brand__tag">Frais. Savoureux. Irrésistible.</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu et Commande</a>
+      <a href="menu.html">Credit</a>
+      <a href="menu.html">My Budget</a>
+      <a href="terms.html">Legal</a>
+    </nav>
+    <div class="nav-actions">
+      
+      <button class="icon-btn js-open-cart" aria-label="Open your order basket">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span class="badge" id="cartBadge" hidden>0</span>
+      </button>
+      <button class="icon-btn hamburger" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO (full-bleed food photo — the photo IS the UI) ============ -->
+  
+
+  <!-- ============ SIGNATURES ============ -->
+  <section class="section section--dark grain">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="eyebrow">Favoris des clients</span>
+        <h2>Les trois incontournables</h2>
+        <span class="bar"></span>
+        <p>Ces trois partent le plus le midi. Si c'est votre première commande, commencez ici.</p>
+      </div>
+      <div class="sig-row" id="sigRow"></div>
+    </div>
+  </section>
+
+  <!-- ============ MENU PREVIEW ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="eyebrow">Directement de la cuisine</span>
+        <h2>À la carte aujourd'hui</h2>
+        <span class="bar"></span>
+        <p>Un aperçu de la carte complète — tous les prix sont affichés avant de commander.</p>
+      </div>
+      <div class="menu-grid" id="previewGrid"></div>
+      <div class="btn-row reveal" style="justify-content:center;margin-top:2.25rem">
+        <a class="btn btn--dark" href="menu.html">Voir la carte complète (16 articles) <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section section--cream">
+    <div class="container split">
+      <div class="split__media reveal">
+        <div class="ph ph--d" style="height:100%">
+          <span>🍛</span>
+          <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=900&q=70" alt="A Timiss rice plate" data-fallback>
+        </div>
+      </div>
+      <div>
+        <div class="section-title section-title--left reveal">
+          <span class="eyebrow">Qui sommes-nous</span>
+          <h2>Cuisiné ici, pour le quartier</h2>
+          <span class="bar"></span>
+        </div>
+        <p class="muted reveal">Timiss is the kitchen you already know. We cook fresh every day — customers, staff and everyone in between. This site exists so you stop queueing to ask what's available: pick your food, we get it moving.</p>
+        <ul class="checklist reveal" style="list-style:none;padding:0">
+          <li><i class="fa-solid fa-circle-check"></i><span>Mangez sur place ou emportez un emballage à emporter.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Livraison dans le quartier — envoyez-nous votre adresse et votre numéro.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Traiteur et formules repas pour entreprises, événements et groupes (préavis 48–72h).</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Formules de crédit avec bonus de 5 à 10%, pour en tirer plus de votre argent.</span></li>
+        </ul>
+        <div class="btn-row reveal" style="margin-top:1.25rem">
+          <a class="btn btn--dark" href="menu.html">Voir la carte complète</a>
+          <a class="btn btn--outline" href="menu.html">Comparer les offres</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="eyebrow">Pas d'appli, pas de file</span>
+        <h2>Commander prend 30 secondes</h2>
+        <span class="bar"></span>
+      </div>
+      <div class="grid grid--3">
+        <article class="card reveal">
+          <div class="card__ico"><i class="fa-solid fa-basket-shopping"></i></div>
+          <h3>1 · Composez votre commande</h3>
+          <p>Touchez « Ajouter » sur ce que vous voulez. Le panier affiche le total, pas de surprise au comptoir.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__ico"><i class="fa-brands fa-whatsapp"></i></div>
+          <h3>2 · Envoyez sur WhatsApp</h3>
+          <p>Um toque abre o WhatsApp com o pedido completo — itens, quantidades e total — já preenchido.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__ico"><i class="fa-solid fa-lock"></i></div>
+          <h3>3 · Payez à votre façon</h3>
+          <p>Espèces à la livraison, solde prépayé, ou paiement à la livraison — votre argent n'est libéré que lorsque vous confirmez la réception.</p>
+        </article>
+      </div>
+      <div class="btn-row reveal" style="justify-content:center;margin-top:2rem">
+        <a class="btn" href="menu.html"><i class="fa-solid fa-utensils"></i> Try it now</a>
+        <a class="btn btn--outline" href="menu.html"><i class="fa-solid fa-chart-pie"></i> Voir le tableau de bord</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="eyebrow">De la file d'attente</span>
+        <h2>Ce que les clients en disent</h2>
+        <span class="bar"></span>
+        <p>Avis illustratifs montrant l'usage du service au quotidien.</p>
+      </div>
+      <div class="swiper reveal">
+        <div class="swiper-wrapper" id="testimonialWrap"></div>
+        <div class="swiper-pagination"></div>
+        <button class="swiper-button-prev" aria-label="Previous testimonial"></button>
+        <button class="swiper-button-next" aria-label="Next testimonial"></button>
+      </div>
+      <p class="center muted" style="font-size:.78rem">Texte d'exemple pour la démonstration — remplacez par de vrais avis avant la mise en ligne.</p>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-strip reveal">
+        <h2>Affamé ? On est sur WhatsApp.</h2>
+        <p>Composez votre commande et envoyez-la en un geste, ou écrivez-nous pour le traiteur, les formules repas et tout ce qui n'est pas à la carte.</p>
+        <div class="btn-row">
+          <a class="btn" href="menu.html"><i class="fa-solid fa-utensils"></i> Composer ma commande</a>
+          <a class="btn btn--ghost" href="https://wa.me/551100000000" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Discuter avec Timiss</a>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ============ SERVICES ============ -->
+  <section class="section section--cream" id="services">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="eyebrow">Comment nous vous servons</span>
+        <h2>Trois façons de manger</h2>
+        <span class="bar"></span>
+        <p>Choisissez ce qui convient à votre journée — un retrait rapide ou une commande traiteur complète.</p>
+      </div>
+      <div class="grid grid--3" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  </main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:1rem">
+          <span class="brand__mark">Timiss</span>
+          <span class="brand__text"><span class="brand__name">Timiss</span><span class="brand__tag">Frais. Savoureux. Irrésistible.</span></span>
+        </a>
+        <p class="notice">Restaurant at 12000; Corniche des Almadies; dakar. Dine-in, takeaway, local delivery, catering and customers credit plans.</p>
+        <div class="footer__social">
+          <a href="https://wa.me/551100000000" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="menu.html" aria-label="Menu"><i class="fa-solid fa-utensils"></i></a>
+          <a href="menu.html" aria-label="Dashboard"><i class="fa-solid fa-chart-pie"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3>Order</h3>
+        <ul class="footer__links">
+          <li><a href="menu.html"><i class="fa-solid fa-chevron-right"></i>Full menu</a></li>
+          <li><a href="menu.html"><i class="fa-solid fa-chevron-right"></i>Commander</a></li>
+          <li><a href="menu.html"><i class="fa-solid fa-chevron-right"></i>Portefeuille et offres</a></li>
+          <li><a href="menu.html"><i class="fa-solid fa-chevron-right"></i>My budget</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul class="footer__links">
+          <li><a href="index.html#services"><i class="fa-solid fa-chevron-right"></i>Sur place et à emporter</a></li>
+          <li><a href="index.html#services"><i class="fa-solid fa-chevron-right"></i>Livraison locale</a></li>
+          <li><a href="index.html#services"><i class="fa-solid fa-chevron-right"></i>Traiteur et formules repas</a></li>
+          <li><a href="terms.html"><i class="fa-solid fa-chevron-right"></i>Mentions légales</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Find us</h3>
+        <ul class="footer__links">
+          <li><i class="fa-solid fa-location-dot"></i>12000; Corniche des Almadies; dakar</li>
+          <li><a href="https://wa.me/551100000000" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>+55 11 0000 0000</a></li>
+          <li><i class="fa-solid fa-clock"></i>Lun–Sam, 8h – 20h</li>
+          <li><i class="fa-solid fa-truck-fast"></i>Livraison : dans le quartier uniquement</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <span>© <span id="yr">2026</span> Timiss. Tous droits réservés.</span>
+      <a href="terms.html">Conditions Générales</a>
+      <a href="terms.html#privacy">Confidentialité</a>
+      <a href="terms.html#refunds">Remboursements</a>
+      <span class="spacer"></span>
+      <span class="notice"><i class="fa-solid fa-flask"></i> Les paiements fonctionnent en mode démonstration jusqu'à l'activation d'une clé réelle.</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+<script src="js/config.js?v=11"></script>
+<script src="js/data.js?v=11"></script>
+<script src="js/store.js?v=11"></script>
+<script src="js/app.js?v=11"></script>
+<script src="js/page-home.js?v=11"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>

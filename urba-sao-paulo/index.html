@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Urbã — Restaurant in Sao Paulo</title>
+<meta name="description" content="Urbã em 421; Rua Dona Germaine Burchard; São Paulo. Peça pelo WhatsApp, retire ou receba em casa. Cardápio, fotos e pedidos em um toque.">
+<meta name="theme-color" content="#3b141c">
+<meta property="og:title" content="Urbã">
+<meta property="og:description" content="Cardápio e pedidos no WhatsApp. Entrega local em 421; Rua Dona Germaine Burchard; São Paulo.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Miniver&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/style.css?v=11">
+</head>
+<body class="has-hero">
+<div class="page-veil" id="pageVeil" aria-hidden="true"><div class="page-veil__inner"><div class="page-veil__mark">Urbã</div><div class="page-veil__bar"><i></i></div><div class="page-veil__txt">Fresco. Saboroso. Irresistível.</div></div></div>
+<script>if(sessionStorage.getItem("dot-nav")==="1"){var _v=document.getElementById("pageVeil");if(_v){_v.classList.add("is-on");_v.style.transition="none";_v.style.opacity="1";_v.style.pointerEvents="all";requestAnimationFrame(function(){_v.style.transition="";});}}</script>
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="Urbã home">
+      <span class="brand__mark">Urbã</span>
+      <span class="brand__text">
+        <span class="brand__name">Urbã</span>
+        <span class="brand__tag">Fresco. Saboroso. Irresistível.</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Cardápio e Pedido</a>
+      <a href="menu.html">Credit</a>
+      <a href="menu.html">Meu Orçamento</a>
+      <a href="terms.html">Legal</a>
+    </nav>
+    <div class="nav-actions">
+      
+      <button class="icon-btn js-open-cart" aria-label="Open your order basket">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span class="badge" id="cartBadge" hidden>0</span>
+      </button>
+      <button class="icon-btn hamburger" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO (full-bleed food photo — the photo IS the UI) ============ -->
+  
+
+  <!-- ============ SIGNATURES ============ -->
+  <section class="section section--dark grain">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="eyebrow">Favoritos dos clientes</span>
+        <h2>Os três destaques</h2>
+        <span class="bar"></span>
+        <p>Estes três levam a maior parte do movimento do almoço. Se é a sua primeira vez, comece por aqui.</p>
+      </div>
+      <div class="sig-row" id="sigRow"></div>
+    </div>
+  </section>
+
+  <!-- ============ MENU PREVIEW ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="eyebrow">Direto da cozinha</span>
+        <h2>No cardápio de hoje</h2>
+        <span class="bar"></span>
+        <p>Um gosto do cardápio completo — todos os preços são exibidos antes de você pedir.</p>
+      </div>
+      <div class="menu-grid" id="previewGrid"></div>
+      <div class="btn-row reveal" style="justify-content:center;margin-top:2.25rem">
+        <a class="btn btn--dark" href="menu.html">Ver o cardápio completo (16 itens) <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section section--cream">
+    <div class="container split">
+      <div class="split__media reveal">
+        <div class="ph ph--d" style="height:100%">
+          <span>🍛</span>
+          <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=900&q=70" alt="A Urbã rice plate" data-fallback>
+        </div>
+      </div>
+      <div>
+        <div class="section-title section-title--left reveal">
+          <span class="eyebrow">Quem somos</span>
+          <h2>Feito aqui, para o nosso bairro</h2>
+          <span class="bar"></span>
+        </div>
+        <p class="muted reveal">Urbã is the kitchen you already know. We cook fresh every day — customers, staff and everyone in between. This site exists so you stop queueing to ask what's available: pick your food, we get it moving.</p>
+        <ul class="checklist reveal" style="list-style:none;padding:0">
+          <li><i class="fa-solid fa-circle-check"></i><span>Coma no local ou leve embalado para o caminho.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Entregamos na sua região — envie o endereço e o número.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Buffet e planos de refeição para empresas, eventos e grupos (aviso de 48–72h).</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Planos de crédito com bônus de 5–10%, para o seu dinheiro render mais.</span></li>
+        </ul>
+        <div class="btn-row reveal" style="margin-top:1.25rem">
+          <a class="btn btn--dark" href="menu.html">Ver o cardápio completo</a>
+          <a class="btn btn--outline" href="menu.html">Comparar planos de crédito</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="eyebrow">Sem app, sem fila</span>
+        <h2>Pedir leva 30 segundos</h2>
+        <span class="bar"></span>
+      </div>
+      <div class="grid grid--3">
+        <article class="card reveal">
+          <div class="card__ico"><i class="fa-solid fa-basket-shopping"></i></div>
+          <h3>1 · Monte seu pedido</h3>
+          <p>Toque em “Adicionar” no que quiser. A cesta mostra o total sempre, para não ter surpresa no balcão.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__ico"><i class="fa-brands fa-whatsapp"></i></div>
+          <h3>2 · Envie pelo WhatsApp</h3>
+          <p>Um toque abre o WhatsApp com o pedido completo — itens, quantidades e total — já preenchido.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__ico"><i class="fa-solid fa-lock"></i></div>
+          <h3>3 · Pague do seu jeito</h3>
+          <p>Dinheiro na entrega, saldo pré-pago, ou pagamento na entrega — seu dinheiro só é liberado quando você confirmar que recebeu.</p>
+        </article>
+      </div>
+      <div class="btn-row reveal" style="justify-content:center;margin-top:2rem">
+        <a class="btn" href="menu.html"><i class="fa-solid fa-utensils"></i> Try it now</a>
+        <a class="btn btn--outline" href="menu.html"><i class="fa-solid fa-chart-pie"></i> Ver o painel do cliente</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="eyebrow">Da fila</span>
+        <h2>O que os clientes dizem</h2>
+        <span class="bar"></span>
+        <p>Comentários ilustrativos de como o pedido é usado no dia a dia.</p>
+      </div>
+      <div class="swiper reveal">
+        <div class="swiper-wrapper" id="testimonialWrap"></div>
+        <div class="swiper-pagination"></div>
+        <button class="swiper-button-prev" aria-label="Previous testimonial"></button>
+        <button class="swiper-button-next" aria-label="Next testimonial"></button>
+      </div>
+      <p class="center muted" style="font-size:.78rem">Texto de exemplo para a demonstração — troque por avaliações reais antes de publicar.</p>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-strip reveal">
+        <h2>Com fome agora? Fale conosco no WhatsApp.</h2>
+        <p>Monte seu pedido e envie em um toque, ou fale conosco para buffet, planos de refeição e pedidos fora do cardápio.</p>
+        <div class="btn-row">
+          <a class="btn" href="menu.html"><i class="fa-solid fa-utensils"></i> Montar meu pedido</a>
+          <a class="btn btn--ghost" href="https://wa.me/551100000000" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Falar com Urbã</a>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- ============ SERVICES ============ -->
+  <section class="section section--cream" id="services">
+    <div class="container">
+      <div class="section-title reveal">
+        <span class="eyebrow">Como servimos você</span>
+        <h2>Três formas de comer</h2>
+        <span class="bar"></span>
+        <p>Escolha o que combina com o seu dia — um pedido rápido ou um buffet completo.</p>
+      </div>
+      <div class="grid grid--3" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  </main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:1rem">
+          <span class="brand__mark">Urbã</span>
+          <span class="brand__text"><span class="brand__name">Urbã</span><span class="brand__tag">Fresco. Saboroso. Irresistível.</span></span>
+        </a>
+        <p class="notice">Restaurant at 421; Rua Dona Germaine Burchard; São Paulo. Dine-in, takeaway, local delivery, catering and customers credit plans.</p>
+        <div class="footer__social">
+          <a href="https://wa.me/551100000000" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="menu.html" aria-label="Menu"><i class="fa-solid fa-utensils"></i></a>
+          <a href="menu.html" aria-label="Dashboard"><i class="fa-solid fa-chart-pie"></i></a>
+        </div>
+      </div>
+      <div>
+        <h3>Pedido</h3>
+        <ul class="footer__links">
+          <li><a href="menu.html"><i class="fa-solid fa-chevron-right"></i>Cardápio completo</a></li>
+          <li><a href="menu.html"><i class="fa-solid fa-chevron-right"></i>Fazer um pedido</a></li>
+          <li><a href="menu.html"><i class="fa-solid fa-chevron-right"></i>Carteira e planos</a></li>
+          <li><a href="menu.html"><i class="fa-solid fa-chevron-right"></i>Meu orçamento</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Serviços</h3>
+        <ul class="footer__links">
+          <li><a href="index.html#services"><i class="fa-solid fa-chevron-right"></i>Comer no local e levar</a></li>
+          <li><a href="index.html#services"><i class="fa-solid fa-chevron-right"></i>Entrega local</a></li>
+          <li><a href="index.html#services"><i class="fa-solid fa-chevron-right"></i>Buffet e planos de refeição</a></li>
+          <li><a href="terms.html"><i class="fa-solid fa-chevron-right"></i>Legal e políticas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Onde nos encontrar</h3>
+        <ul class="footer__links">
+          <li><i class="fa-solid fa-location-dot"></i>421; Rua Dona Germaine Burchard; São Paulo</li>
+          <li><a href="https://wa.me/551100000000" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i>+55 11 0000 0000</a></li>
+          <li><i class="fa-solid fa-clock"></i>Seg–Sáb, 8h – 20h</li>
+          <li><i class="fa-solid fa-truck-fast"></i>Entrega: apenas no entorno</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <span>© <span id="yr">2026</span> Urbã. Todos os direitos reservados.</span>
+      <a href="terms.html">Termos e Condições</a>
+      <a href="terms.html#privacy">Privacidade</a>
+      <a href="terms.html#refunds">Reembolsos</a>
+      <span class="spacer"></span>
+      <span class="notice"><i class="fa-solid fa-flask"></i> Os pagamentos rodam em modo de demonstração até que uma chave real seja configurada.</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+<script src="js/config.js?v=11"></script>
+<script src="js/data.js?v=11"></script>
+<script src="js/store.js?v=11"></script>
+<script src="js/app.js?v=11"></script>
+<script src="js/page-home.js?v=11"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
