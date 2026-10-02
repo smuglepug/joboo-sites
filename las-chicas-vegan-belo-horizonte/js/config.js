@@ -18,7 +18,7 @@ window.DOT_CAFE_CONFIG = {
     reviewCount: "1421",
     priceBand: "R$ 40-60",
     customerQuote: "Makes you feel at home and offers safe vegan food.",
-    ownPhotos: []
+    ownPhotos: ["img/p1.jpg", "img/p2.jpg", "img/p3.jpg", "img/p4.jpg", "img/p5.jpg", "img/p6.jpg"]
   },
   payments: { mode: "none", provider: "none", demoDelayMs: 0, providers: {} },
   push: { enabled: false, vapidPublicKey: "", applicationServerKeyRaw: "", subscriptionEndpoint: null },

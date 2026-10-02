@@ -42,9 +42,66 @@
 </header>
 
 <main>
-  
+  <section class="hero-mini" style="background-image:url('p1.jpg');background-size:cover;background-position:center"
+    <div class="container">
+      <span class="crumb">12; Rua José Moura Peçanha</span>
+      <h1>O cardápio completo</h1>
+      <p>Every price in Real, updated before you order. Add what you want, then send the whole itemised basket to Buteco on WhatsApp in one tap.</p>
+      <div class="btn-row" style="margin-top:1.5rem">
+        <button class="btn js-open-cart"><i class="fa-solid fa-basket-shopping"></i> Revisar cesta</button>
+        <a class="btn btn--ghost" href="menu.html"><i class="fa-solid fa-wallet"></i> Recarregue e ganhe bônus</a>
+      </div>
+    </div>
+  </section>
 
-  
+  <section class="section section--tight">
+    <div class="container">
+      <div class="filters-bar">
+        <div class="search-wrap">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <label class="sr-only" for="menuSearch">Buscar no cardápio</label>
+          <input class="input" id="menuSearch" type="search" placeholder="Search menu…" autocomplete="off">
+        </div>
+        <label class="sr-only" for="menuSort">Sort menu</label>
+        <select class="select select--auto" id="menuSort">
+          <option value="featured">Destaques primeiro</option>
+          <option value="low">Preço: menor para maior</option>
+          <option value="high">Preço: maior para menor</option>
+          <option value="az">A – Z</option>
+        </select>
+      </div>
+      <div class="filters" id="menuFilters" role="group" aria-label="Filter by category"></div>
+      <p class="center muted" id="menuCount" style="font-size:.85rem;margin-top:-1rem;margin-bottom:1.5rem"></p>
+      <div class="menu-grid" id="menuGrid"></div>
+
+      <div class="panel" style="margin-top:2.5rem">
+        <div class="panel__head"><h3><i class="fa-solid fa-circle-info"></i> Bom saber antes de pedir</h3></div>
+        <div class="grid grid--2">
+          <ul class="checklist" style="list-style:none;padding:0">
+            <li><i class="fa-solid fa-truck-fast"></i><span><strong>Entrega local</strong> — send your address; we deliver across the local area.</span></li>
+            <li><i class="fa-solid fa-bowl-food"></i><span><strong>Buffet e planos de refeição</strong> — need 20+ plates? Mensagem us with 48–72 hours' notice.</span></li>
+          </ul>
+          <ul class="checklist" style="list-style:none;padding:0">
+            <li><i class="fa-solid fa-utensils"></i><span><strong>Pickup</strong> — collect at our counter, no room number needed.</span></li>
+            <li><i class="fa-solid fa-money-bill-wave"></i><span><strong>Prices in BRL</strong> — subject to change; the basket total is what you send to us, and we confirm on WhatsApp.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--cream">
+    <div class="container">
+      <div class="cta-strip reveal">
+        <h2>Não achou o que queria?</h2>
+        <p>Ask Buteco directly — off-menu requests, large local orders and catering quotes all happen on WhatsApp.</p>
+        <div class="btn-row">
+          <a class="btn btn--ghost" href="https://wa.me/551100000000" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Mensagem +55 11 0000 0000</a>
+          <a class="btn" href="menu.html"><i class="fa-solid fa-wallet"></i> Carteira e planos</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="footer">

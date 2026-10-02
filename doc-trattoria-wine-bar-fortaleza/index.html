@@ -55,7 +55,64 @@
 <main id="main">
 
   <!-- ============ HERO (full-bleed food photo — the photo IS the UI) ============ -->
-  
+  <section class="hero-full" id="hero">
+    <div class="hero-full__bg" aria-hidden="true">
+      <img src="img/p1.jpg" alt="">
+    </div>
+    <div class="hero-full__veil" aria-hidden="true"></div>
+    <div class="container hero-full__content">
+      <h1>Comida local irresistível, pedida em um toque.</h1>
+      <p class="hero__lede">Peça pelo WhatsApp, pague com seu saldo ou na entrega — entregamos no seu endereço.</p>
+      <div class="hero__cta">
+        <a class="btn" href="menu.html"><i class="fa-solid fa-utensils"></i> Fazer um pedido</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust bar sits below the hero, never over the food -->
+  <div class="trust-bar">
+    <div class="container trust-bar__inner">
+      <span class="trust-chip"><i class="fa-brands fa-whatsapp"></i> Pedido direto pelo WhatsApp</span>
+      <span class="trust-chip"><i class="fa-solid fa-lock"></i> Pagamento liberado na entrega</span>
+      <span class="trust-chip"><i class="fa-solid fa-truck-fast"></i> Entrega no seu endereço</span>
+      <span class="trust-chip"><i class="fa-solid fa-bowl-food"></i> Buffet · aviso de 48–72h</span>
+    </div>
+  </div>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Esfinha Especial</span><span>·</span><span>Arroz da Casa</span><span>·</span><span>Esfiha Árabe</span><span>·</span><span>Asas Picantes</span><span>·</span><span>Penne de Frango</span><span>·</span><span>Meat Pie</span><span>·</span><span>Zobo</span><span>·</span><span>Entrega local</span><span>·</span>
+      <span>Esfinha Especial</span><span>·</span><span>Arroz da Casa</span><span>·</span><span>Esfiha Árabe</span><span>·</span><span>Asas Picantes</span><span>·</span><span>Penne de Frango</span><span>·</span><span>Meat Pie</span><span>·</span><span>Zobo</span><span>·</span><span>Entrega local</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- ============ WALLET TEASER ============ -->
+  <section class="section">
+    <div class="container split">
+      <div>
+        <div class="section-title section-title--left reveal">
+          <span class="eyebrow">Carteira e planos</span>
+          <h2>Veja nossos planos</h2>
+          <span class="bar"></span>
+        </div>
+        
+      <div class="panel reveal">
+        <div class="panel__head"><h3><i class="fa-solid fa-calculator"></i> Como funciona uma recarga</h3></div>
+        <div class="receipt">
+          <div class="receipt__row"><span>Você paga</span><span>R$250,000</span></div>
+          <div class="receipt__row receipt__row--bonus"><span>Bônus do plano 2 (7%)</span><span>+R$17,500</span></div>
+          <div class="receipt__row receipt__row--total"><span>Saldo na carteira</span><span>R$267,500</span></div>
+        </div>
+        <ul class="checklist" style="list-style:none;padding:0;margin:1rem 0 0">
+          <li><i class="fa-solid fa-circle-check"></i><span>Bônus calculado automaticamente antes de você pagar.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Toda recarga, bônus, retenção, liberação e pedido ficam no seu histórico.</span></li>
+          <li><i class="fa-solid fa-circle-check"></i><span>Exporte todo o histórico em CSV quando quiser.</span></li>
+        </ul>
+        <p class="muted" style="font-size:.78rem;margin:1rem 0 0"><i class="fa-solid fa-circle-info"></i> Payments on this site currently run in <strong>demo mode</strong> — no real money is charged. See <a href="terms.html#demo" style="text-decoration:underline">Terms §8</a>.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- ============ SIGNATURES ============ -->
   <section class="section section--dark grain">

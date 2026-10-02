@@ -18,7 +18,7 @@ window.DOT_CAFE_CONFIG = {
     reviewCount: "",
     priceBand: "",
     customerQuote: "",
-    ownPhotos: []
+    ownPhotos: ["img/p1.webp", "img/p2.webp", "img/p3.webp", "img/p4.jpg", "img/p5.jpg", "img/p6.jpg"]
   },
   payments: { mode: "none", provider: "none", demoDelayMs: 0, providers: {} },
   push: { enabled: false, vapidPublicKey: "", applicationServerKeyRaw: "", subscriptionEndpoint: null },

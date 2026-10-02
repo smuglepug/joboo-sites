@@ -14,8 +14,8 @@ window.DOT_CAFE_CONFIG = {
     currencySymbol: "R$",
     cateringNoticeHours: "24\u201348 hrs",
     deliveryArea: "Belo Horizonte",
-    rating: "",
-    reviewCount: "",
+    rating: "5.0",
+    reviewCount: "18",
     priceBand: "",
     customerQuote: "",
     ownPhotos: ["p1.jpg", "p2.jpg", "p3.jpg", "p4.jpg"]
